@@ -1,0 +1,24 @@
+> apt-get update; apt-get upgrade -y
+
+> java -version
+
+> apt install -y default-jdk
+
+> cd /tmp; wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
+
+
+> tar xf apache-maven-3.9.2-bin.tar.gz
+
+> mv apache-maven-3.9.2 /opt/maven
+
+> chown -R root:root /opt/maven
+
+
+cat <<EOF >>&nbsp;/etc/profile.d/mymavenvars.sh
+export JAVA_HOME=/usr/lib/jvm/default-java
+export M2_HOME=/opt/maven
+export MAVEN_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+EOF
+ln -s /opt/maven/bin/mvn /usr/bin/mvn
+
