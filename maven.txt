@@ -6,6 +6,8 @@
 
 > cd /tmp; wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
 
+Get the tar file from the official website and follow the steps
+
 
 > tar xf apache-maven-3.9.2-bin.tar.gz
 
