@@ -16,7 +16,7 @@ Get the tar file from the official website and follow the steps
 > chown -R root:root /opt/maven
 
 
-cat <<EOF >>&nbsp;/etc/profile.d/mymavenvars.sh
+cat <<EOF >> /etc/profile.d/mymavenvars.sh
 export JAVA_HOME=/usr/lib/jvm/default-java
 export M2_HOME=/opt/maven
 export MAVEN_HOME=/opt/maven
